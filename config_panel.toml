@@ -1,0 +1,21 @@
+#:schema https://github.com/YunoHost/apps/raw/master/schemas/config_panel.v1.schema.json
+
+version = "1.0"
+
+
+[main]
+
+services = ["__APP__"]
+# help = ""
+    
+
+    [main.config]
+    name = "Webhook server configuration"
+    optional = false
+        
+        [main.customization.hooks]
+        
+        ask = "Hooks"
+        type = "text"
+        bind = "/var/www/__APP__/hooks.yaml"
+        help = "Docs: https://github.com/adnanh/webhook/tree/master/docs"
