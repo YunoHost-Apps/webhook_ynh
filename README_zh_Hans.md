@@ -35,10 +35,8 @@ Everything else is the responsibility of the command's author.
 **分发版本：** 2.8.1~ynh1
 ## 文档与资源
 
-- 官方应用网站： <https://example.com>
-- 官方用户文档： <https://yunohost.org/apps>
-- 官方管理文档： <https://yunohost.org/packaging_apps>
-- 上游应用代码库： <https://some.forge.com/example/example>
+- 官方管理文档： <https://github.com/adnanh/webhook/tree/master/docs>
+- 上游应用代码库： <https://github.com/adnanh/webhook>
 - YunoHost 商店： <https://apps.yunohost.org/app/webhook>
 - 报告 bug： <https://github.com/YunoHost-Apps/webhook_ynh/issues>
 
