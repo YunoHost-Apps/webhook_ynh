@@ -29,17 +29,7 @@ ynh_script_progression --message="Upgrading source files..." --weight=1
 
 ynh_setup_source --dest_dir="$install_dir"
 
-### $install_dir will automatically be initialized with some decent
-### permissions by default ... however, you may need to recursively reapply
-### ownership to all files such as after the ynh_setup_source step
 chown -R "$app:www-data" "$install_dir"
-
-#=================================================
-# UPDATE A CONFIG FILE
-#=================================================
-ynh_script_progression --message="Updating $app's configuration files..." --weight=1
-
-ynh_add_config --template="hooks.yaml" --destination="$install_dir/hooks.yaml"
 
 chmod 400 "$install_dir/hooks.yaml"
 chown "$app:$app" "$install_dir/hooks.yaml"
