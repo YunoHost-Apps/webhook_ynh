@@ -27,7 +27,7 @@ chown "$app:$app" "$install_dir/hooks.yaml"
 # compare if the system arch is different from the binary arch
 # if so, download the correct binary
 arch="$YNH_ARCH"
-if [ "$YNH_ARCH" != "amd64" ]; then arch="x86-64"; fi
+if [ "$YNH_ARCH" == "amd64" ]; then arch="x86-64"; fi
 if [ "$arch" != "$(file "$install_dir"/webhook | cut -d ',' -f 2 | tr -d ' ')" ]
 then
 	ynh_script_progression --message="Migrating binary architecture..."
