@@ -35,10 +35,8 @@ Everything else is the responsibility of the command's author.
 **Paketatutako bertsioa:** 2.8.1~ynh1
 ## Dokumentazioa eta baliabideak
 
-- Aplikazioaren webgune ofiziala: <https://example.com>
-- Erabiltzaileen dokumentazio ofiziala: <https://yunohost.org/apps>
-- Administratzaileen dokumentazio ofiziala: <https://yunohost.org/packaging_apps>
-- Jatorrizko aplikazioaren kode-gordailua: <https://some.forge.com/example/example>
+- Administratzaileen dokumentazio ofiziala: <https://github.com/adnanh/webhook/tree/master/docs>
+- Jatorrizko aplikazioaren kode-gordailua: <https://github.com/adnanh/webhook>
 - YunoHost Denda: <https://apps.yunohost.org/app/webhook>
 - Eman errore baten berri: <https://github.com/YunoHost-Apps/webhook_ynh/issues>
 

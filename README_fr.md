@@ -35,10 +35,8 @@ Tout le reste relève de la responsabilité de l'auteur de la commande.
 **Version incluse :** 2.8.1~ynh1
 ## Documentations et ressources
 
-- Site officiel de l’app : <https://example.com>
-- Documentation officielle utilisateur : <https://yunohost.org/apps>
-- Documentation officielle de l’admin : <https://yunohost.org/packaging_apps>
-- Dépôt de code officiel de l’app : <https://some.forge.com/example/example>
+- Documentation officielle de l’admin : <https://github.com/adnanh/webhook/tree/master/docs>
+- Dépôt de code officiel de l’app : <https://github.com/adnanh/webhook>
 - YunoHost Store : <https://apps.yunohost.org/app/webhook>
 - Signaler un bug : <https://github.com/YunoHost-Apps/webhook_ynh/issues>
 
