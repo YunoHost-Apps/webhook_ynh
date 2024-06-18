@@ -21,30 +21,27 @@ ynh_restore_file --origin_path="$install_dir"
 chown -R "$app:www-data" "$install_dir"
 
 #=================================================
-# RESTORE THE DATA DIRECTORY
+# DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
-ynh_script_progression --message="Restoring the data directory..." --weight=1
 
-ynh_restore_file --origin_path="$data_dir" --not_mandatory
+# compare if the system arch is different from the binary arch
+# if so, download the correct binary
+if [ "$YNH_ARCH" != "$(file "$install_dir"/gotosocial | cut -d ',' -f 2 | tr -d ' ')" ]
+then
+	ynh_script_progression --message="Migrating binary architecture..."
 
-### (Same as for install dir)
-chown -R "$app:www-data" "$data_dir"
+	# Download, check integrity, uncompress and patch the source from app.src
+	ynh_setup_source --dest_dir="$install_dir" --full_replace=1 --keep="config.yaml"
 
-#=================================================
-# RESTORE THE MYSQL DATABASE
-#=================================================
-ynh_script_progression --message="Restoring the MySQL database..." --weight=1
-
-ynh_mysql_connect_as --user="$db_user" --password="$db_pwd" --database="$db_name" < ./db.sql
+    chmod 750 "$install_dir"
+    chmod -R o-rwx "$install_dir"
+    chown -R "$app:www-data" "$install_dir"
+fi
 
 #=================================================
 # RESTORE SYSTEM CONFIGURATIONS
 #=================================================
 ynh_script_progression --message="Restoring system configurations related to $app..." --weight=1
-
-### This should be a symetric version of what happens in the install script
-
-ynh_restore_file --origin_path="/etc/php/$phpversion/fpm/pool.d/$app.conf"
 
 ynh_restore_file --origin_path="/etc/nginx/conf.d/$domain.d/$app.conf"
 
@@ -55,24 +52,10 @@ yunohost service add "$app" --description="A short description of the app" --log
 
 ynh_restore_file --origin_path="/etc/logrotate.d/$app"
 
-ynh_restore_file --origin_path="/etc/fail2ban/jail.d/$app.conf"
-ynh_restore_file --origin_path="/etc/fail2ban/filter.d/$app.conf"
-ynh_systemd_action --action=restart --service_name=fail2ban
-
 #=================================================
 # RESTORE VARIOUS FILES
 #=================================================
 
-ynh_restore_file --origin_path="/etc/cron.d/$app"
-ynh_restore_file --origin_path="/etc/$app/"
-
-### For apps with huge logs, you might want to not backup logs every time:
-### The mkdir call is just here in case the log directory was not backed up.
-### mkdir -p "/var/log/$app"
-### chown $app:www-data "/var/log/$app"
-### ynh_restore_file --src_path="/var/log/$app/" --not_mandatory
-###
-### For other apps, the simple way is better:
 ynh_restore_file --origin_path="/var/log/$app/"
 
 #=================================================
@@ -80,9 +63,7 @@ ynh_restore_file --origin_path="/var/log/$app/"
 #=================================================
 ynh_script_progression --message="Reloading NGINX web server and $app's service..." --weight=1
 
-### Typically you only have either $app or php-fpm but not both at the same time...
 ynh_systemd_action --service_name="$app" --action="start" --log_path="/var/log/$app/$app.log"
-ynh_systemd_action --service_name="php$phpversion-fpm" --action=reload
 
 ynh_systemd_action --service_name=nginx --action=reload
 

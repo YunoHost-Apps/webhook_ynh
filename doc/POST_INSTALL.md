@@ -1,7 +1,3 @@
-This is a dummy disclaimer to display after the install
+The Webhook server configuration file is `__INSTALL_DIR_/hooks.yaml`.
 
-The app url is <https://__DOMAIN____PATH__>
-
-The app install dir is `__INSTALL_DIR__`
-
-The app id is `__ID__`
+Docs: <https://github.com/adnanh/webhook/tree/master/docs>
