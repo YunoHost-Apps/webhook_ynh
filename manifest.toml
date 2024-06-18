@@ -13,10 +13,8 @@ maintainers = [ "OniriCorpe" ]
 
 [upstream]
 license = "MIT"
-website = "https://example.com"
-admindoc = "https://yunohost.org/packaging_apps"
-userdoc = "https://yunohost.org/apps"
-code = "https://some.forge.com/example/example"
+admindoc = "https://github.com/adnanh/webhook/tree/master/docs"
+code = "https://github.com/adnanh/webhook"
 
 fund = "https://github.com/adnanh/webhook?tab=readme-ov-file#by-giving-money"
 
@@ -25,18 +23,10 @@ yunohost = ">= 11.2"
 architectures = "all"
 multi_instance = true
 
-# FIXME: replace with true, false, or "not_relevant".
-# Not to confuse with the "sso" key: the "ldap" key corresponds to wether or not a user *can* login on the app using
-# its YunoHost credentials.
-ldap = "?"
+ldap = "not_relevant"
+sso = "not_relevant"
 
-# FIXME: replace with true, false, or "not_relevant".
-# Not to confuse with the "ldap" key: the "sso" key corresponds to wether or not a user is *automatically logged-in*
-# on the app when logged-in on the YunoHost portal.
-sso = "?"
-
-# FIXME: replace with an **estimate** minimum disk and RAM requirements. e.g. 20M, 400M, 1G...
-disk = "50M"
+disk = "12M"
 ram.build = "50M"
 ram.runtime = "50M"
 
