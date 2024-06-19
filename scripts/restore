@@ -33,7 +33,7 @@ then
 	ynh_script_progression --message="Migrating binary architecture..."
 
 	# Download, check integrity, uncompress and patch the source from app.src
-	ynh_setup_source --dest_dir="$install_dir" --full_replace=1 --keep="hooks.yaml"
+	ynh_setup_source --dest_dir="$install_dir"
 
     chmod 750 "$install_dir"
     chmod -R o-rwx "$install_dir"
