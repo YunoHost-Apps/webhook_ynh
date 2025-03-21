@@ -5,7 +5,9 @@ It shall NOT be edited by hand.
 
 # Webhook for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/webhook.svg)](https://dash.yunohost.org/appci/app/webhook) ![Working status](https://ci-apps.yunohost.org/ci/badges/webhook.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/webhook.maintain.svg)
+[![Integration level](https://apps.yunohost.org/badge/integration/webhook)](https://ci-apps.yunohost.org/ci/apps/webhook/)
+![Working status](https://apps.yunohost.org/badge/state/webhook)
+![Maintenance status](https://apps.yunohost.org/badge/maintained/webhook)
 
 [![Install Webhook with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=webhook)
 
