@@ -5,7 +5,9 @@ No se debe editar a mano.
 
 # Webhook para Yunohost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/webhook.svg)](https://dash.yunohost.org/appci/app/webhook) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/webhook.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/webhook.maintain.svg)
+[![Nivel de integración](https://apps.yunohost.org/badge/integration/webhook)](https://ci-apps.yunohost.org/ci/apps/webhook/)
+![Estado funcional](https://apps.yunohost.org/badge/state/webhook)
+![Estado En Mantención](https://apps.yunohost.org/badge/maintained/webhook)
 
 [![Instalar Webhook con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=webhook)
 
@@ -42,7 +44,7 @@ Everything else is the responsibility of the command's author.
 
 ## Información para desarrolladores
 
-Por favor enviar sus correcciones a la [`branch testing`](https://github.com/YunoHost-Apps/webhook_ynh/tree/testing
+Por favor enviar sus correcciones a la [rama `testing`](https://github.com/YunoHost-Apps/webhook_ynh/tree/testing).
 
 Para probar la rama `testing`, sigue asÍ:
 

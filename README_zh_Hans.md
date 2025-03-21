@@ -5,7 +5,9 @@
 
 # YunoHost 上的 Webhook
 
-[![集成程度](https://dash.yunohost.org/integration/webhook.svg)](https://dash.yunohost.org/appci/app/webhook) ![工作状态](https://ci-apps.yunohost.org/ci/badges/webhook.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/webhook.maintain.svg)
+[![集成程度](https://apps.yunohost.org/badge/integration/webhook)](https://ci-apps.yunohost.org/ci/apps/webhook/)
+![工作状态](https://apps.yunohost.org/badge/state/webhook)
+![维护状态](https://apps.yunohost.org/badge/maintained/webhook)
 
 [![使用 YunoHost 安装 Webhook](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=webhook)
 
