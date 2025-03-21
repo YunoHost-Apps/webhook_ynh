@@ -15,19 +15,12 @@ ynh_script_progression "Setting up source files..."
 # Download, check integrity, uncompress and patch the source from manifest.toml
 ynh_setup_source --dest_dir="$install_dir"
 
-### $install_dir will automatically be initialized with some decent
-### permission by default ... however, you may need to recursively reapply
-### ownership to all files such as after the ynh_setup_source step
-#REMOVEME? Assuming the install dir is setup using ynh_setup_source, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chown -R "$app:www-data" "$install_dir"
 #=================================================
 # APP INITIAL CONFIGURATION
 #=================================================
 ynh_script_progression "Adding $app's configuration files..."
 
 ynh_config_add --template="hooks.yaml" --destination="$install_dir/hooks.yaml"
-
-chmod 400 "$install_dir/hooks.yaml"
-chown "$app:$app" "$install_dir/hooks.yaml"
 
 #=================================================
 # SYSTEM CONFIGURATION
