@@ -34,7 +34,7 @@ Webhook aims to do nothing more than it should do, and that is:
 Everything else is the responsibility of the command's author.
 
 
-**Shipped version:** 2.8.1~ynh1
+**Shipped version:** 2.8.1~ynh2
 ## Documentation and resources
 
 - Official admin documentation: <https://github.com/adnanh/webhook/tree/master/docs>
