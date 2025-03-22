@@ -1,3 +1,15 @@
+# A empaquetar unha app, mira este exemplo
+
+- Copia esta app antes de traballar nela, usando o botón ['Usa este modelo'](https://github.com/new?template_name=example_ynh&template_owner=YunoHost) no repo en Github
+- Edita o `manifest.toml` con información específica da app
+- Edita os scripts `install`, `upgrade`, `remove`, `backup` e `restore`, así como os ficheiros conf necesarios en `conf/`
+  - Usar a [documentación dos asistentes para scripts](https://yunohost.org/packaging_apps_helpers)
+- Editar tamén os scripts `change_url` e `config` , ou eliminalos se non os usaches
+- Engade un ficheiro `LICENSE` para o paquete.
+  - Nota: este ficheiro `LICENSE` non ten que ser necesariamente o LICENSE da app da que procede - só é a LICENZA coa que queres publicar o código deste paquete. Podes elixir libremente! (Se non o tes claro, recomendamos usar a licenza [AGPL-3](https://www.gnu.org/licenses/agpl-3.0.txt))
+- Editar os ficheiros dentro do directorio `doc/` ([le a páxina acerca de documentar os paquetes](https://yunohost.org/packaging_app_doc))
+- Os ficheiros `README.md` créanse automáticamente con <https://github.com/YunoHost/apps/tree/master/tools/readme_generator>
+
 <!--
 NOTA: Este README foi creado automáticamente por <https://github.com/YunoHost/apps/tree/master/tools/readme_generator>
 NON debe editarse manualmente.
@@ -8,7 +20,6 @@ NON debe editarse manualmente.
 [![Nivel de integración](https://apps.yunohost.org/badge/integration/webhook)](https://ci-apps.yunohost.org/ci/apps/webhook/)
 ![Estado de funcionamento](https://apps.yunohost.org/badge/state/webhook)
 ![Estado de mantemento](https://apps.yunohost.org/badge/maintained/webhook)
-
 [![Instalar Webhook con YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=webhook)
 
 *[Le este README en outros idiomas.](./ALL_README.md)*

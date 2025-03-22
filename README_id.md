@@ -1,3 +1,15 @@
+# Memaket satu aplikasi, dimulai dari contoh ini
+
+- Salin aplikasi ini sebelum mengerjakannya, menggunakan tombol ['Gunakan templat ini'](https://github.com/new?template_name=example_ynh&template_owner=YunoHost) di repo Github
+- Edit `manifest.toml` dengan info khas aplikasi
+- Edit skrip `install`, `upgrade`, `remove`, `backup` and `restore`, dan setiap berkas conf yang relevan dalam `conf/`
+  - Menggunakan [dokumentasi pembantu skrip](https://yunohost.org/packaging_apps_helpers)
+- Juga edit skrip `change_url` dan `config`, atau singkirkan mereka bila Anda sudah tidak memerlukannya
+- Tambah berkas `LICENSE` pada paket.
+  - NB: berkas `LICENSE` ini tidak dimaksudkan untuk selalu sama dengan aplikasi hulu - hanya LICENSE yang Anda inginkan untuk menerbitkan kode paket ini dan Anda bisa bebas memilihnya! (Bila Anda tidak tahu mana yang harus dipilih, kami sarankan [the AGPL-3](https://www.gnu.org/licenses/agpl-3.0.txt))
+- Edit berkas di bawah direktori `doc/` ([lihat halaman mengenai mendokumentasikan paket](https://yunohost.org/packaging_app_doc))
+- Berkas `README.md` akan dibuat secara otomatis oleh <https://github.com/YunoHost/apps/tree/master/tools/readme_generator>
+
 <!--
 N.B.: README ini dibuat secara otomatis oleh <https://github.com/YunoHost/apps/tree/master/tools/readme_generator>
 Ini TIDAK boleh diedit dengan tangan.

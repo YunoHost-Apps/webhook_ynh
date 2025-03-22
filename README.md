@@ -8,7 +8,6 @@ It shall NOT be edited by hand.
 [![Integration level](https://apps.yunohost.org/badge/integration/webhook)](https://ci-apps.yunohost.org/ci/apps/webhook/)
 ![Working status](https://apps.yunohost.org/badge/state/webhook)
 ![Maintenance status](https://apps.yunohost.org/badge/maintained/webhook)
-
 [![Install Webhook with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=webhook)
 
 *[Read this README in other languages.](./ALL_README.md)*
