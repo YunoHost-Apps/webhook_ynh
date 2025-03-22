@@ -30,7 +30,7 @@ ynh_script_progression "Upgrading system configurations related to $app..."
 ynh_config_add_nginx
 
 # Create a dedicated systemd config
-ynh_add_systemd_socket_config
+ynh_config_add_systemd_socket
 
 ynh_config_add_systemd
 

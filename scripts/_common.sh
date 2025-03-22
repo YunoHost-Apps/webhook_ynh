@@ -15,7 +15,7 @@
 #
 # See the documentation of `ynh_config_add` for a description of the template
 # format and how placeholders are replaced with actual variables.
-ynh_add_systemd_socket_config() {
+ynh_config_add_systemd_socket() {
     # ============ Argument parsing =============
     local -A args_array=([s]=socket= [t]=template=)
     local socket
@@ -36,7 +36,7 @@ ynh_add_systemd_socket_config() {
 #
 # usage: ynh_config_remove_systemd socket
 # | arg: socket   - Socket name (optionnal, $app by default)
-ynh_remove_systemd_socket_config() {
+ynh_config_remove_systemd_socket() {
     local socket="${1:-$app}"
     if [ -e "/etc/systemd/system/$socket.socket" ]; then
         ynh_systemctl --socket="$socket" --action=stop
