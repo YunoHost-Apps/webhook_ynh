@@ -18,7 +18,7 @@
 # this helper :
 #
 #   __APP__       by  $app
-#   __FINALPATH__ by  $install_dir
+#   __INSTALL_DIR__ by  $install_dir
 #
 # And dynamic variables (from the last example) :
 #   __VAR_1__    by $var_1
