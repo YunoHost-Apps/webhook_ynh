@@ -1,15 +1,3 @@
-# Pakowanie aplikacji, zaczynając od tego przykładu
-
-- Skopiuj tę aplikację zanim rozpoczniesz nad nią pracę używając przycisku ['Użyj tego szablonu'](https://github.com/new?template_name=example_ynh&template_owner=YunoHost) na GitHubie
-- Edytuj `manifest.toml` z informacjami o danej aplikacji
-- Edytuj skrypty `install`, `upgrade`, `remove`, `backup` i `restore` i inne powiązane pliki w `conf/`
-  - Używa [dokumentacji do skryptów pomocniczych](https://yunohost.org/packaging_apps_helpers)
-- Edytuj również skrypty `change_url` i `config` lub usuń je, jeśli nie są Ci potrzebne
-- Dodaj plik `LICENSE` dla paczki.
-  - UWAGA: plik `LICENSE` niekoniecznie musi być tą samą LICENCJĄ, co aplikacja źródłowa — jest to po prostu LICENCJA, z którą chcesz opublikować kod tego pakietu, i możesz ją wybrać swobodnie! (Jeśli nie wiesz, którą wybrać, zalecamy [AGPL-3](https://www.gnu.org/licenses/agpl-3.0.txt))
-- Edytuj pliki w katalogu `doc/` ([zobacz stronę o dokumentowaniu pakietów](https://yunohost.org/packaging_app_doc))
-- Pliki `README.md` są automatycznie generowane przez <https://github.com/YunoHost/apps/tree/master/tools/readme_generator>
-
 <!--
 To README zostało automatycznie wygenerowane przez <https://github.com/YunoHost/apps/tree/master/tools/readme_generator>
 Nie powinno być ono edytowane ręcznie.

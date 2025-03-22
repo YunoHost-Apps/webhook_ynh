@@ -5,10 +5,10 @@ EZ editatu eskuz.
 
 # Webhook YunoHost-erako
 
-
 [![Integrazio maila](https://apps.yunohost.org/badge/integration/webhook)](https://ci-apps.yunohost.org/ci/apps/webhook/)
 ![Funtzionamendu egoera](https://apps.yunohost.org/badge/state/webhook)
 ![Mantentze egoera](https://apps.yunohost.org/badge/maintained/webhook)
+
 [![Instalatu Webhook YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=webhook)
 
 *[Irakurri README hau beste hizkuntzatan.](./ALL_README.md)*
