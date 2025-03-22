@@ -39,7 +39,7 @@ ynh_config_add_systemd_socket() {
 ynh_config_remove_systemd_socket() {
     local socket="${1:-$app}"
     if [ -e "/etc/systemd/system/$socket.socket" ]; then
-        ynh_systemctl --socket="$socket" --action=stop
+        ynh_systemctl --service="$socket" --action=stop
         systemctl disable "$socket" --quiet
         ynh_safe_rm "/etc/systemd/system/$socket.socket"
         systemctl daemon-reload
