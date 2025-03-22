@@ -20,8 +20,8 @@ Il NE doit PAS être modifié à la main.
 
 Webhook est un outil configurable léger écrit en Go, qui vous permet de créer facilement des points de terminaison HTTP (hooks) sur votre serveur, que vous pouvez utiliser pour exécuter des commandes que vous aurez configurées. Vous pouvez également transmettre des données de la requête HTTP (telles que des en-têtes, des charges utiles ou des variables de requête) à vos commandes. Webhook vous permet également de spécifier des règles qui doivent être satisfaites pour que le hook soit déclenché.
 
-**Version incluse :** 2.8.2~ynh1
 
+**Version incluse :** 2.8.2~ynh1
 ## Documentations et ressources
 
 - Documentation officielle de l’admin : <https://github.com/adnanh/webhook/tree/master/docs>
