@@ -4,7 +4,7 @@ packaging_format = 2
 
 id = "webhook"
 name = "Webhook"
-description.en = "Webhook server to run shell commands"
+description.en = "Server to run Webhook shell commands"
 description.fr = "Serveur webhook pour lancer des commandes shell"
 
 version = "2.8.2~ynh1"
