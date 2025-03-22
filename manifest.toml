@@ -7,7 +7,7 @@ name = "Webhook"
 description.en = "Webhook server to run shell commands."
 description.fr = "Serveur webhook pour lancer des commandes shell."
 
-version = "2.8.1~ynh1"
+version = "2.8.1~ynh2"
 
 maintainers = [ "OniriCorpe" ]
 
