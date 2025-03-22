@@ -22,7 +22,6 @@ Webhook is a lightweight configurable tool written in Go, that allows you to eas
 
 
 **Dostarczona wersja:** 2.8.2~ynh1
-
 ## Dokumentacja i zasoby
 
 - Oficjalna dokumentacja dla administratora: <https://github.com/adnanh/webhook/tree/master/docs>
