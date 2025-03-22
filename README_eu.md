@@ -18,7 +18,9 @@ EZ editatu eskuz.
 
 # Example app YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/example.svg)](https://dash.yunohost.org/appci/app/example) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/example.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/example.maintain.svg)
+[![Integrazio maila](https://apps.yunohost.org/badge/integration/example)](https://ci-apps.yunohost.org/ci/apps/example/)
+![Funtzionamendu egoera](https://apps.yunohost.org/badge/state/example)
+![Mantentze egoera](https://apps.yunohost.org/badge/maintained/example)
 
 [![Instalatu Example app YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=example)
 

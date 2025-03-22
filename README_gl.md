@@ -6,7 +6,7 @@
   - Usar a [documentación dos asistentes para scripts](https://yunohost.org/packaging_apps_helpers)
 - Editar tamén os scripts `change_url` e `config` , ou eliminalos se non os usaches
 - Engade un ficheiro `LICENSE` para o paquete.
-  - Nota: este ficheiro `LICENSE` non ten que ser necesariamente o LICENSE da app da que procede - só é a LICENZA coa que queres publicar o código deste paquete. Podes elexir libremente! (Se non o tes claro, recomendamos usar a licenza [AGPL-3](https://www.gnu.org/licenses/agpl-3.0.txt))
+  - Nota: este ficheiro `LICENSE` non ten que ser necesariamente o LICENSE da app da que procede - só é a LICENZA coa que queres publicar o código deste paquete. Podes elixir libremente! (Se non o tes claro, recomendamos usar a licenza [AGPL-3](https://www.gnu.org/licenses/agpl-3.0.txt))
 - Editar os ficheiros dentro do directorio `doc/` ([le a páxina acerca de documentar os paquetes](https://yunohost.org/packaging_app_doc))
 - Os ficheiros `README.md` créanse automáticamente con <https://github.com/YunoHost/apps/tree/master/tools/readme_generator>
 
@@ -18,7 +18,9 @@ NON debe editarse manualmente.
 
 # Example app para YunoHost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/example.svg)](https://dash.yunohost.org/appci/app/example) ![Estado de funcionamento](https://ci-apps.yunohost.org/ci/badges/example.status.svg) ![Estado de mantemento](https://ci-apps.yunohost.org/ci/badges/example.maintain.svg)
+[![Nivel de integración](https://apps.yunohost.org/badge/integration/example)](https://ci-apps.yunohost.org/ci/apps/example/)
+![Estado de funcionamento](https://apps.yunohost.org/badge/state/example)
+![Estado de mantemento](https://apps.yunohost.org/badge/maintained/example)
 
 [![Instalar Example app con YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=example)
 

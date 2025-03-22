@@ -18,7 +18,9 @@ No se debe editar a mano.
 
 # Example app para Yunohost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/example.svg)](https://dash.yunohost.org/appci/app/example) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/example.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/example.maintain.svg)
+[![Nivel de integración](https://apps.yunohost.org/badge/integration/example)](https://ci-apps.yunohost.org/ci/apps/example/)
+![Estado funcional](https://apps.yunohost.org/badge/state/example)
+![Estado En Mantención](https://apps.yunohost.org/badge/maintained/example)
 
 [![Instalar Example app con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=example)
 
@@ -51,7 +53,7 @@ This is a dummy description of this app features
 
 ## Información para desarrolladores
 
-Por favor enviar sus correcciones a la [`branch testing`](https://github.com/YunoHost-Apps/example_ynh/tree/testing
+Por favor enviar sus correcciones a la [rama `testing`](https://github.com/YunoHost-Apps/example_ynh/tree/testing).
 
 Para probar la rama `testing`, sigue asÍ:
 

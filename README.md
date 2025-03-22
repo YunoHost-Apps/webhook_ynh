@@ -18,7 +18,9 @@ It shall NOT be edited by hand.
 
 # Example app for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/example.svg)](https://dash.yunohost.org/appci/app/example) ![Working status](https://ci-apps.yunohost.org/ci/badges/example.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/example.maintain.svg)
+[![Integration level](https://apps.yunohost.org/badge/integration/example)](https://ci-apps.yunohost.org/ci/apps/example/)
+![Working status](https://apps.yunohost.org/badge/state/example)
+![Maintenance status](https://apps.yunohost.org/badge/maintained/example)
 
 [![Install Example app with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=example)
 
