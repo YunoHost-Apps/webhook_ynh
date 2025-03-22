@@ -34,7 +34,7 @@ Webhook aims to do nothing more than it should do, and that is:
 Everything else is the responsibility of the command's author.
 
 
-**分发版本：** 2.8.1~ynh1
+**分发版本：** 2.8.1~ynh2
 ## 文档与资源
 
 - 官方管理文档： <https://github.com/adnanh/webhook/tree/master/docs>
