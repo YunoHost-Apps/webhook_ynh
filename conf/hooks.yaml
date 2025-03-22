@@ -1,0 +1,3 @@
+- id: example-webhook
+  execute-command: "__INSTALL_DIR__/script.sh"
+  command-working-directory: "__INSTALL_DIR__"

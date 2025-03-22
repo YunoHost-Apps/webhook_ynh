@@ -1,3 +1,3 @@
-Ceci est une fausse doc d'admin pour cette app
+Le fichier de configuration du serveur Webhook est `__INSTALL_DIR__/hooks.yaml`.
 
-Le dossier d'install de l'app est `__INSTALL_DIR__`
+Documentation : <https://github.com/adnanh/webhook/tree/master/docs>
