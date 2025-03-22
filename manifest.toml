@@ -4,10 +4,10 @@ packaging_format = 2
 
 id = "webhook"
 name = "Webhook"
-description.en = "Webhook server to run shell commands."
-description.fr = "Serveur webhook pour lancer des commandes shell."
+description.en = "Server to run Webhook shell commands"
+description.fr = "Serveur webhook pour lancer des commandes shell"
 
-version = "2.8.1~ynh1"
+version = "2.8.2~ynh1"
 
 maintainers = [ "OniriCorpe" ]
 
@@ -26,9 +26,9 @@ multi_instance = true
 ldap = "not_relevant"
 sso = "not_relevant"
 
-disk = "12M"
-ram.build = "50M"
-ram.runtime = "50M"
+disk = "10M"
+ram.build = "80M"
+ram.runtime = "40M"
 
 [install]
     [install.domain]
@@ -39,20 +39,20 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    amd64.url = "https://github.com/adnanh/webhook/releases/download/2.8.1/webhook-linux-amd64.tar.gz"
-    amd64.sha256 = "15e13ab8ee5b6dfbc9423e732c9b28728e0aa1afb033e481561e76b2be1170a9"
-    i386.url = "https://github.com/adnanh/webhook/releases/download/2.8.1/webhook-linux-386.tar.gz"
-    i386.sha256 = "f5d232160b0c87f6fe226095792e0681635f1ff33090b263ef595274f98395ff"
-    armhf.url = "https://github.com/adnanh/webhook/releases/download/2.8.1/webhook-linux-arm.tar.gz"
-    armhf.sha256 = "59977d3941390f71443a8b914c87d076f1b2a59deb30d3acfba151d3d9b0d698"
-    arm64.url = "https://github.com/adnanh/webhook/releases/download/2.8.1/webhook-linux-arm64.tar.gz"
-    arm64.sha256 = "51d077b3ba5678a88e4a5e28d4127a3cfde4d1b5284ec03a4ec95a7852d64202"
+    amd64.url = "https://github.com/adnanh/webhook/releases/download/2.8.2/webhook-linux-amd64.tar.gz"
+    amd64.sha256 = "7a190ec7b4c2ffbb4eb1e11755a2e7acd82f1ffe74f60f235a360441daf22fd2"
+    arm64.url = "https://github.com/adnanh/webhook/releases/download/2.8.2/webhook-linux-arm64.tar.gz"
+    arm64.sha256 = "0ff4b0d0b411869407bd3b4727559c008c62779801a139f80b5ac2b06144aa11"
+    armhf.url = "https://github.com/adnanh/webhook/releases/download/2.8.2/webhook-linux-arm.tar.gz"
+    armhf.sha256 = "0b592a0a63e48497a37188c57c5cee672c40c35221e3279efd0d1b4eb366e45b"
+    i386.url = "https://github.com/adnanh/webhook/releases/download/2.8.2/webhook-linux-386.tar.gz"
+    i386.sha256 = "6c54b29a318d10979ec25be50a920ab92890e0a3c8bfd183f1ad6595dfd85725"
 
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset.amd64 = "^webhook-linux-amd64.tar.gz$"
-    autoupdate.asset.i386 = "^webhook-linux-386.tar.gz$"
-    autoupdate.asset.armhf = "^webhook-linux-arm.tar.gz$"
     autoupdate.asset.arm64 = "^webhook-linux-arm64.tar.gz$"
+    autoupdate.asset.armhf = "^webhook-linux-arm.tar.gz$"
+    autoupdate.asset.i386 = "^webhook-linux-386.tar.gz$"
 
     [resources.system_user]
 
