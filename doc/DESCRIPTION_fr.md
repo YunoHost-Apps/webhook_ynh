@@ -1,6 +1,6 @@
 Webhook est un outil configurable léger écrit en Go, qui vous permet de créer facilement des points de terminaison HTTP (hooks) sur votre serveur, que vous pouvez utiliser pour exécuter des commandes que vous aurez configurées. Vous pouvez également transmettre des données de la requête HTTP (telles que des en-têtes, des charges utiles ou des variables de requête) à vos commandes. Webhook vous permet également de spécifier des règles qui doivent être satisfaites pour que le hook soit déclenché.
 
-Par exemple, si vous utilisez Github ou Bitbucket, vous pouvez utiliser webhook pour configurer un hook qui exécute un script de redéploiement pour votre projet sur votre serveur, chaque fois que vous apportez des modifications à la branche `master` de votre projet.
+Par exemple, si vous utilisez GitHub ou Bitbucket, vous pouvez utiliser webhook pour configurer un hook qui exécute un script de redéploiement pour votre projet sur votre serveur, chaque fois que vous apportez des modifications à la branche `master` de votre projet.
 
 Si vous utilisez Mattermost ou Slack, vous pouvez configurer une "intégration webhook sortante" ou une "commande Slash" pour exécuter diverses commandes sur votre serveur, qui peuvent ensuite vous renvoyer un rapport directement à vous ou à vos canaux en utilisant les "intégrations webhook entrantes", ou le corps de réponse approprié.
 

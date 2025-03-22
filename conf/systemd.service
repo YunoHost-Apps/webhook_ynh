@@ -1,5 +1,5 @@
 [Unit]
-Description=Webhook server
+Description=Webhook: webhook server to run shell commands
 After=network.target
 
 [Service]
