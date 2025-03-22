@@ -27,7 +27,7 @@ ynh_config_add_systemd_socket() {
 
     ynh_config_add --template="$template" --destination="/etc/systemd/system/$socket.socket"
 
-    systemctl enable "$socket" --quiet
+    systemctl enable "$socket.socket" --quiet
     systemctl daemon-reload
 }
 
