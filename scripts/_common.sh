@@ -44,10 +44,10 @@ ynh_add_systemd_socket_config () {
     # To avoid a break by set -u, use a void substitution ${var:-}. If the variable is not set, it's simply set with an empty variable.
     # Substitute in a nginx config file only if the variable is not empty
     if [ -n "${install_dir:-}" ]; then
-        ynh_replace_string --match_string="__INSTALL_DIR____" --replace_string="$install_dir" --target_file="$finalsystemdconf"
+        ynh_replace --match="__INSTALL_DIR____" --replace="$install_dir" --file="$finalsystemdconf"
     fi
     if [ -n "${app:-}" ]; then
-        ynh_replace_string --match_string="__APP__" --replace_string="$app" --target_file="$finalsystemdconf"
+        ynh_replace --match="__APP__" --replace="$app" --file="$finalsystemdconf"
     fi
 
     # Replace all other variables given as arguments
@@ -55,7 +55,7 @@ ynh_add_systemd_socket_config () {
     do
         # ${var_to_replace^^} make the content of the variable on upper-cases
         # ${!var_to_replace} get the content of the variable named $var_to_replace
-        ynh_replace_string --match_string="__${var_to_replace^^}__" --replace_string="${!var_to_replace}" --target_file="$finalsystemdconf"
+        ynh_replace --match="__${var_to_replace^^}__" --replace="${!var_to_replace}" --file="$finalsystemdconf"
     done
 
     ynh_store_file_checksum --file="$finalsystemdconf"
