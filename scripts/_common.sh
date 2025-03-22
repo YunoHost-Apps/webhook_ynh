@@ -58,7 +58,7 @@ ynh_add_systemd_socket_config () {
         ynh_replace --match="__${var_to_replace^^}__" --replace="${!var_to_replace}" --file="$finalsystemdconf"
     done
 
-    ynh_store_file_checksum --file="$finalsystemdconf"
+    ynh_store_file_checksum "$finalsystemdconf"
 
     chown root: "$finalsystemdconf"
     systemctl enable "$socket.socket" --quiet
