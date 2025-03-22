@@ -1,64 +1,57 @@
-# Packager une application, à partir de cet exemple
-
-- Copiez cette application avant de travailler dessus, en utilisant le bouton ['Utilisez ce template'](https://github.com/new?template_name=example_ynh&template_owner=YunoHost) sur ce dépôt Github
-- Éditez le `manifest.toml` avec les informations spécifiques à cette application
-- Éditez les scripts `install`, `upgrade`, `remove`, `backup` et `restore` ainsi que tous les fichiers de configurations pertinents dans `conf/`
-  - Utilisez la [documentation des helpers](https://yunohost.org/packaging_apps_helpers)
-- Modifiez également les scripts `change_url` et `config`, ou supprimez-les si vous n'en avez pas l'utilité
-- Ajoutez un fichier `LICENCE` for le paquet.
-  - NB : ce fichier `LICENSE` ne doit pas nécessairement être identique à la LICENCE de l'application packagée ; c'est seulement la LICENCE avec laquelle vous voulez que le code de ce paquet soit publié et vos pouvez librement la choisir ! (Si vous ne savez pas laquelle choisir, nous recommandons [l'AGPL-3](https://www.gnu.org/licenses/agpl-3.0.txt))
-- Modifiez les fichiers du dossier `doc/` ([voir la page concernant la documentation des packages](https://yunohost.org/packaging_app_doc))
-- Les fichiers `README.md` sont automatiquement généré par <https://github.com/YunoHost/apps/tree/master/tools/readme_generator>
-
----
 <!--
 Nota bene : ce README est automatiquement généré par <https://github.com/YunoHost/apps/tree/master/tools/readme_generator>
 Il NE doit PAS être modifié à la main.
 -->
 
-# Example app pour YunoHost
+# Webhook pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/example.svg)](https://dash.yunohost.org/appci/app/example) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/example.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/example.maintain.svg)
+[![Niveau d’intégration](https://apps.yunohost.org/badge/integration/webhook)](https://ci-apps.yunohost.org/ci/apps/webhook/)
+![Statut du fonctionnement](https://apps.yunohost.org/badge/state/webhook)
+![Statut de maintenance](https://apps.yunohost.org/badge/maintained/webhook)
 
-[![Installer Example app avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=example)
+[![Installer Webhook avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=webhook)
 
 *[Lire le README dans d'autres langues.](./ALL_README.md)*
 
-> *Ce package vous permet d’installer Example app rapidement et simplement sur un serveur YunoHost.*  
+> *Ce package vous permet d’installer Webhook rapidement et simplement sur un serveur YunoHost.*  
 > *Si vous n’avez pas YunoHost, consultez [ce guide](https://yunohost.org/install) pour savoir comment l’installer et en profiter.*
 
 ## Vue d’ensemble
 
-Ceci est une fausse description des fonctionalités de l'app
+Webhook est un outil configurable léger écrit en Go, qui vous permet de créer facilement des points de terminaison HTTP (hooks) sur votre serveur, que vous pouvez utiliser pour exécuter des commandes que vous aurez configurées. Vous pouvez également transmettre des données de la requête HTTP (telles que des en-têtes, des charges utiles ou des variables de requête) à vos commandes. Webhook vous permet également de spécifier des règles qui doivent être satisfaites pour que le hook soit déclenché.
+
+Par exemple, si vous utilisez Github ou Bitbucket, vous pouvez utiliser webhook pour configurer un hook qui exécute un script de redéploiement pour votre projet sur votre serveur, chaque fois que vous apportez des modifications à la branche `master` de votre projet.
+
+Si vous utilisez Mattermost ou Slack, vous pouvez configurer une "intégration webhook sortante" ou une "commande Slash" pour exécuter diverses commandes sur votre serveur, qui peuvent ensuite vous renvoyer un rapport directement à vous ou à vos canaux en utilisant les "intégrations webhook entrantes", ou le corps de réponse approprié.
+
+L'objectif de Webhook est de ne rien faire de plus que ce qu'il doit faire, à savoir :
+
+- recevoir la demande,
+- analyser les en-têtes, les charges utiles et les variables de la requête,
+- vérifier si les règles spécifiées pour le hook sont satisfaites,
+- et enfin, transmettre les arguments spécifiés à la commande spécifiée via les arguments de la ligne de commande ou via les variables d'environnement.
+
+Tout le reste relève de la responsabilité de l'auteur de la commande.
 
 
-**Version incluse :** 1.0~ynh1
-
-**Démo :** <https://demo.example.com>
-
-## Captures d’écran
-
-![Capture d’écran de Example app](./doc/screenshots/example.jpg)
-
+**Version incluse :** 2.8.1~ynh1
 ## Documentations et ressources
 
-- Site officiel de l’app : <https://example.com>
-- Documentation officielle utilisateur : <https://yunohost.org/apps>
-- Documentation officielle de l’admin : <https://yunohost.org/packaging_apps>
-- Dépôt de code officiel de l’app : <https://some.forge.com/example/example>
-- YunoHost Store : <https://apps.yunohost.org/app/example>
-- Signaler un bug : <https://github.com/YunoHost-Apps/example_ynh/issues>
+- Documentation officielle de l’admin : <https://github.com/adnanh/webhook/tree/master/docs>
+- Dépôt de code officiel de l’app : <https://github.com/adnanh/webhook>
+- YunoHost Store : <https://apps.yunohost.org/app/webhook>
+- Signaler un bug : <https://github.com/YunoHost-Apps/webhook_ynh/issues>
 
 ## Informations pour les développeurs
 
-Merci de faire vos pull request sur la [branche `testing`](https://github.com/YunoHost-Apps/example_ynh/tree/testing).
+Merci de faire vos pull request sur la [branche `testing`](https://github.com/YunoHost-Apps/webhook_ynh/tree/testing).
 
 Pour essayer la branche `testing`, procédez comme suit :
 
 ```bash
-sudo yunohost app install https://github.com/YunoHost-Apps/example_ynh/tree/testing --debug
+sudo yunohost app install https://github.com/YunoHost-Apps/webhook_ynh/tree/testing --debug
 ou
-sudo yunohost app upgrade example -u https://github.com/YunoHost-Apps/example_ynh/tree/testing --debug
+sudo yunohost app upgrade webhook -u https://github.com/YunoHost-Apps/webhook_ynh/tree/testing --debug
 ```
 
 **Plus d’infos sur le packaging d’applications :** <https://yunohost.org/packaging_apps>
