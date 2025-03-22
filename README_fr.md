@@ -34,7 +34,7 @@ L'objectif de Webhook est de ne rien faire de plus que ce qu'il doit faire, à s
 Tout le reste relève de la responsabilité de l'auteur de la commande.
 
 
-**Version incluse :** 2.8.1~ynh1
+**Version incluse :** 2.8.1~ynh2
 ## Documentations et ressources
 
 - Documentation officielle de l’admin : <https://github.com/adnanh/webhook/tree/master/docs>
