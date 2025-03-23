@@ -1,0 +1,18 @@
+[Unit]
+Description=Webhook server socket
+
+[Socket]
+# Listen on all network interfaces, port 9000
+ListenStream=__PORT__
+
+# Alternatives:
+
+## Listen on one specific interface only
+# ListenStream=10.0.0.1:9000
+# FreeBind=true
+
+## Listen on a Unix domain socket
+# ListenStream=/tmp/webhook.sock
+
+[Install]
+WantedBy=multi-user.target
