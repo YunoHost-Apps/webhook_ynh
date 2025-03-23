@@ -7,7 +7,7 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
-ExecStart=__INSTALL_DIR__/webhook -ip "127.0.0.1" -port __PORT__ -hooks "__INSTALL_DIR__/hooks.yaml"
+ExecStart=__INSTALL_DIR__/webhook -ip "127.0.0.1" -port __PORT__ -hooks "__INSTALL_DIR__/hooks.yaml" -hotreload
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
 
