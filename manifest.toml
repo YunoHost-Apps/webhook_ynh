@@ -18,7 +18,7 @@ code = "https://github.com/adnanh/webhook"
 fund = "https://github.com/adnanh/webhook?tab=readme-ov-file#by-giving-money"
 
 [integration]
-yunohost = ">= 12.0.9"
+yunohost = ">= 12.1.38"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
